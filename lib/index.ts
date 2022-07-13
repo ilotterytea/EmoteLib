@@ -18,7 +18,10 @@ import STVProvider from "./providers/STVProvider";
 import TTVProvider from "./providers/TTVProvider";
 
 interface EmotesLibConfiguration {
+    /** Client ID from your dev.twitch.tv application. */
     client_id: string | undefined,
+
+    /** Access token. */
     access_token: string | undefined
 }
 
@@ -28,6 +31,9 @@ export default class EmotesLib {
     frankerfacez: FFZProvider;
     seventv: STVProvider;
 
+    /**
+     * Emote library.
+     */
     constructor (config: EmotesLibConfiguration) {
         this.twitch = new TTVProvider(config.client_id as string, config.access_token as string);
         this.betterttv = new BTTVProvider(config.client_id as string, config.access_token as string);
