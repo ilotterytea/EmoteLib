@@ -1,7 +1,7 @@
 {
   "name": "emoteslib",
-  "version": "1.0.0",
-  "description": "Library for getting global emotes as well as channel emotes.",
+  "version": "1.0.1",
+  "description": "Library for receiving global Twitch emotes as well as Twitch channel emotes. Support for third-party providers is included.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
