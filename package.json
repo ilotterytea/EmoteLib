@@ -1,0 +1,35 @@
+{
+  "name": "emoteslib",
+  "version": "1.0.0",
+  "description": "Library for getting global emotes as well as channel emotes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notdankenough/EmotesLib.git"
+  },
+  "keywords": [
+    "twitch",
+    "emotes",
+    "7tv",
+    "stv",
+    "bttv",
+    "ffz",
+    "parse",
+    "third-party"
+  ],
+  "author": "ilotterytea",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/notdankenough/EmotesLib/issues"
+  },
+  "homepage": "https://github.com/notdankenough/EmotesLib#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
