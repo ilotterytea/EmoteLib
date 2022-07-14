@@ -1,7 +1,7 @@
 <div align=center>
     <h1>
         <img src="https://cdn.7tv.app/emote/61bf1cd52a281efd57b6f6b4/1x">
-        EmotesLib <br>
+        EmoteLib <br>
         <a href="https://wakatime.com/badge/user/09f67b1c-0691-482a-a1d4-e4751e6962de/project/a31db3c2-47f2-4ebe-b22b-954527f06d7a"><img src="https://wakatime.com/badge/user/09f67b1c-0691-482a-a1d4-e4751e6962de/project/a31db3c2-47f2-4ebe-b22b-954527f06d7a.svg?style=plastic" alt="zulul vi von"></a>
         <img src="https://img.shields.io/github/license/notdankenough/emoteslib?style=plastic">
         <img src="https://img.shields.io/github/package-json/v/notdankenough/emoteslib?style=plastic">
@@ -18,16 +18,16 @@ It supports 4 providers:
 ## Installation guide:
 1. Install the library from Node Package Manager:
 ```bash
-$ npm install emoteslib
+$ npm i emotelib
 ```
 
 ## Usage:
 ### Initialization:
 ```typescript
-import EmotesLib from "emoteslib";
+import EmoteLib from "emotelib";
 
 // "client_id" and "access_token" are needed to convert the username into a user ID.
-const emotes = new EmotesLib({
+const emotes = new EmoteLib({
     client_id: "123456789abcdef",
     access_token: "123456789abcdef"
 });

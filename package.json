@@ -1,5 +1,5 @@
 {
-  "name": "@notdankenough/emoteslib",
+  "name": "emotelib",
   "version": "1.0.1",
   "description": "Library for receiving global Twitch emotes as well as Twitch channel emotes. Support for third-party providers is included.",
   "main": "dist/index.js",
