@@ -16,65 +16,65 @@ namespace IEmote {
     type BTTVEmoteTypes = "shared" | "channel" | "global";
 
     export interface BTTV {
-        id: string | null,
-        code: string | null,
-        imageType: string | null,
+        id: string | undefined,
+        code: string | undefined,
+        imageType: string | undefined,
         user?: {
-            id?: string | null,
-            name?: string | null,
-            displayName?: string | null,
-            providerId?: string | null
+            id?: string | undefined,
+            name?: string | undefined,
+            displayName?: string | undefined,
+            providerId?: string | undefined
         },
-        emoteType?: BTTVEmoteTypes | null
+        emoteType?: BTTVEmoteTypes | undefined
     }
 
     export interface FFZ { 
-        id: number | null,
-        name: string | null,
-        height: number | null,
-        width: number | null,
-        public: boolean | null,
-        hidden: boolean | null,
-        modifier: boolean | null,
-        offset: string | null,
-        margins: string | null,
-        css: string | null,
+        id: number | undefined,
+        name: string | undefined,
+        height: number | undefined,
+        width: number | undefined,
+        public: boolean | undefined,
+        hidden: boolean | undefined,
+        modifier: boolean | undefined,
+        offset: string | undefined,
+        margins: string | undefined,
+        css: string | undefined,
         owner: {
-            _id: number | null,
-            name: string | null,
-            display_name: string | null
+            _id: number | undefined,
+            name: string | undefined,
+            display_name: string | undefined
         },
         urls: {[id: number]: string},
-        status: number | null,
-        usage_count: number | null,
-        created_at: string | null,
-        last_updated: string | null
+        status: number | undefined,
+        usage_count: number | undefined,
+        created_at: string | undefined,
+        last_updated: string | undefined
     }
 
     export interface STV {
-        id: string | null,
-        name: string | null,
+        id: string | undefined,
+        name: string | undefined,
         owner: {
-            id: string | null,
-            twitch_id: string | null,
-            login: string | null,
-            display_name: string | null,
+            id: string | undefined,
+            twitch_id: string | undefined,
+            login: string | undefined,
+            display_name: string | undefined,
             role?: {
-                id?: string | null,
-                name?: string | null,
-                position?: number | null,
-                color?: number | null,
-                allowed?: number | null,
-                denied?: number | null
-            }, 
-            visibility: number | null,
-            mime: string | null,
-            status: number | null,
-            tags: string[] | null,
-            width: number[] | undefined,
-            height: number[] | undefined,
-            urls: [string, string][]
-        }
+                id?: string | undefined,
+                name?: string | undefined,
+                position?: number | undefined,
+                color?: number | undefined,
+                allowed?: number | undefined,
+                denied?: number | undefined
+            }
+        },
+        visibility: number | undefined,
+        mime: string | undefined,
+        status: number | undefined,
+        tags: string[] | undefined,
+        width: number[] | undefined,
+        height: number[] | undefined,
+        urls: [string, string][]
     }
 
     export interface TTV {
